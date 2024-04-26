@@ -18,8 +18,9 @@ code {
 
 .image {
   position: relative;
-  width: 100%;
+  width: 100% !important;
   height: 100vh;
+  overflow: hidden;
 }
 
 .content {
@@ -117,5 +118,5 @@ h3 {
 
 /* Assuming each component fills the viewport or has a defined height */
 .snap-container > div {
-  scroll-snap-align: start;
+  scroll-snap-align:start;
 }
