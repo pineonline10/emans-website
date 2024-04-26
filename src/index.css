@@ -72,7 +72,7 @@ h3 {
 
 .text-box-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
@@ -83,7 +83,7 @@ h3 {
 }
 
 .parallax-box {
-  height: 100vh; /* This will give a full viewport height to the Parallax background */
+  height: 100%; /* This will give a full viewport height to the Parallax background */
   width: 100%;
   background-size: cover; /* Cover might work better for Parallax background images */
   background-repeat: no-repeat;
@@ -107,16 +107,11 @@ h3 {
 }
 
 .scroll-page {
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 
 .snap-container {
   scroll-snap-type: y proximity;
   overflow-y: scroll;
   height: 100vh; /* or the height you prefer */
-}
-
-/* Assuming each component fills the viewport or has a defined height */
-.snap-container > div {
-  scroll-snap-align:start;
 }
