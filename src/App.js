@@ -5,6 +5,7 @@ import TextBoxOne from "./components/TextBoxOne";
 import Navbar from "./components/Navbar/Navbar";
 import TextBoxTwo from "./components/TextBoxTwo";
 import TextBoxThree from "./components/TextBoxThree"
+import TextBoxFour from "./components/TextBoxFour";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <ImageThree/>
       <TextBoxTwo />
       <TextBoxThree />
+      <TextBoxFour />
     </div>
   );
 }
